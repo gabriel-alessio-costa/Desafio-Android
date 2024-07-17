@@ -1,0 +1,152 @@
+@charset "UTF-8";
+@font-face {                 /* usar nos h2 em diante */
+    font-family: 'idroid';
+    src: url(fontes/idroid.otf);
+}
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&display=swap');
+.anton-sc-regular {
+    font-family: "Anton SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  :root {
+    --cor0: white;
+
+  }             /* :root é um codigo que tudo escrito nele, serve para todo o documento. Em css, variaveis começam com --nomevar */
+  *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;         /*importante sempre começar assim para as definiçoes desejaveis venham do nosso codigo e nao automatico.*/
+
+  }
+
+h1{
+    text-align: center;
+    margin: auto;
+    font-family: "Anton SC", sans-serif;
+    padding-top: 25px;
+    font-size: 3em;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.61);
+    margin-bottom: 10px;
+}  
+body{
+    background-color: bisque;
+}
+
+header{
+    color: white;
+    background-image: linear-gradient(#21904D,#003516);
+    text-align: center;
+    min-height: 150px;
+    
+}
+header> p{
+    margin: auto;
+    max-width: 600px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+header>nav{
+    margin: 0%;
+    list-style: none;  
+    padding: 10px;
+    text-align: left;
+    
+}
+nav>a{
+    text-decoration: none;
+    color: #00ff66;
+    padding: 10px;
+    border-radius: 10px;
+    transition-duration: .5s;
+    
+}
+nav>a:hover{
+    background-color: #21904D;
+}
+h2{
+    font-family: 'idroid';
+    margin-bottom: 10px;
+    text-indent: 9px;
+    line-height: 1.5em;
+    color: #003516;
+    font-weight: bold;
+}
+h3{
+    font-family: 'idroid';
+    margin: 10px 0px;
+    text-indent: 9px;
+    line-height: 1.5em;
+    background-image: linear-gradient(to right, #21904D, transparent);
+    color: #003516;
+    font-weight: bold;
+}
+main{
+    margin: auto;
+    background-color: white;
+    max-width: 800px;
+    min-width: 320px;
+    padding: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-bottom: 10px;
+    text-align: justify;
+    box-shadow: 0px 0px 10px black;
+}
+figcaption{
+    font-size: small;
+    text-indent: 30px;
+}
+main p{
+    margin: 10px;
+    text-indent: 30px;
+    line-height: 1.5em;
+}
+img{
+    display: block;
+    margin: auto;
+    max-width: 600px;
+  
+}
+#bugdroid{
+    display: block;
+    margin: auto;
+    max-width: 350px;
+}
+.videos{
+    margin: 20px -20px;
+    padding: 10px 20px;
+    background-color: #003516;
+}
+h4{
+    background-color: #003516;
+    color: white;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin: -10px -10px 0px -10px;
+}
+aside{
+    background-color: #2ece6ec5;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.539);
+}
+aside > ul{
+    list-style-type: '\2714\00A0\00A0'; 
+    list-style-position: inside;
+    columns: 2;
+
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+footer > p {
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
